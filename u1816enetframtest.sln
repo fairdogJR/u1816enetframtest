@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32510.428
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "u1816enetframtest", "u1816enetframtest.csproj", "{EF222880-F019-4356-8AC5-719E979D5078}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testswitchdll", "..\testswitchdll\testswitchdll.csproj", "{B493BB4D-7194-4151-AC7F-C22B90E54846}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EF222880-F019-4356-8AC5-719E979D5078}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF222880-F019-4356-8AC5-719E979D5078}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF222880-F019-4356-8AC5-719E979D5078}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF222880-F019-4356-8AC5-719E979D5078}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B493BB4D-7194-4151-AC7F-C22B90E54846}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B493BB4D-7194-4151-AC7F-C22B90E54846}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B493BB4D-7194-4151-AC7F-C22B90E54846}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B493BB4D-7194-4151-AC7F-C22B90E54846}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E3B62AD0-C9CA-4CA8-B8BC-862E2A9A837D}
+	EndGlobalSection
+EndGlobal
