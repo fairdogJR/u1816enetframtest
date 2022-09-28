@@ -8,7 +8,10 @@ using Agilent.U1816x;
 namespace u1816eNS
 {
     public class initSwitch
+
     {
+        public string unitInfo { get; set; }
+
         public int Startup()
         {
             //try
@@ -75,7 +78,7 @@ namespace u1816eNS
             return a + b;
         }
 
-        public void getSwitch1()
+        public void getSwitch1(string serialNo, string modelNo)
         {
             //Create an instance of the driver
             AgU1816x driver = new AgU1816x();
@@ -83,8 +86,8 @@ namespace u1816eNS
             int RFPath1 = 0, RFPath2 = 0;
             int CycleCount = 0;
             
-            string serialNo = "MY641410001"; //tkf this MUST be correct for the switch you are accessing
-            string modelNo = "U1816E";
+            //string serialNo = "MY641410001"; //tkf this MUST be correct for the switch you are accessing
+            //string modelNo = "U1816E";
 
             driver.Initialize(modelNo, serialNo);
             //status = driver.RFPATH(a, b);
@@ -92,40 +95,46 @@ namespace u1816eNS
             driver.GetRFPath2(ref RFPath1, ref RFPath2);
             
             //get the instrument liste and serial numbers available
-            driver.InstrumentList().ForEach(i => Console.Write("{0}\t", i));
+            driver.InstrumentList().ForEach(i => Console.WriteLine("{0}\t", i));
 
-            Console.WriteLine("Switch 1 current RF path :     {0} ", RFPath1);
-            Console.WriteLine("Switch 2 current RF path :     {0} \n", RFPath2);
+            //Console.WriteLine("Switch 1 current RF path :     {0} ", RFPath1);
+           // Console.WriteLine("Switch 2 current RF path :     {0} \n", RFPath2);
         }
-        public void setSwitch1(int a, int b)
+        public void setSwitch1(string serialNo, string modelNo, int swPos1, int swPos2)
         {
             //Create an instance of the driver
             AgU1816x driver = new AgU1816x();
             AgU1816x.StatusEnum status;
             int RFPath1 = 0, RFPath2 = 0;
             int CycleCount = 0;
+            
 
-            string serialNo = "MY641410001"; //tkf this MUST be correct for the switch you are accessing
-            string modelNo = "U1816E";
+            //string serialNo = "MY641410001"; //tkf this MUST be correct for the switch you are accessing
+           //string modelNo = "U1816E";
 
             driver.Initialize(modelNo, serialNo);
 // status = driver.RFPATH(a, b);
-            driver.RFPATH2(a, b);
+            driver.RFPATH2(swPos1, swPos2);
 
 
             driver.GetRFPath2(ref RFPath1, ref RFPath2);
             Console.WriteLine("Switch 1 current RF path :     {0} ", RFPath1);
             Console.WriteLine("Switch 2 current RF path :     {0} \n", RFPath2);
+
+
         }
 
 
         public void getSwInfo()
         {
+            // this call will get you a list of the available switches 
+
             //Create an instance of the driver
             AgU1816x driver = new AgU1816x();
             AgU1816x.StatusEnum status;
             int RFPath1 = 0, RFPath2 = 0;
             int CycleCount = 0;
+            //string unitInfo = "";
 
 
             //driver.Initialize(modelNo, serialNo);
@@ -134,7 +143,11 @@ namespace u1816eNS
             //driver.GetRFPath2(ref RFPath1, ref RFPath2);
 
             //get the instrument liste and serial numbers available
-            driver.InstrumentList().ForEach(i => Console.Write("{0}\t", i));
+            //driver.InstrumentList().ForEach(i => Console.Write("{0}\t", i));
+
+            driver.InstrumentList().ForEach(i => this.unitInfo=i);
+           
+            
         }
     }
 }
