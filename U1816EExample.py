@@ -4,7 +4,8 @@
 import subprocess
 import sys
 #makesure that exe and the Agilent.U1816x are in the dir with this tool
-appPath=r'C:\Users\fairfiel.KEYSIGHT\source\repos\testswitchdll\bin\Debug\netcoreapp3.1\U1816ESwitchtool.exe'
+#appPath=r'C:\Users\fairfiel.KEYSIGHT\source\repos\testswitchdll\bin\Debug\netcoreapp3.1\U1816ESwitchtool.exe'
+appPath=r'U1816ESwitchtool.exe'
 #subprocess.call([appPath])
 #
 #
