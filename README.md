@@ -13,7 +13,8 @@ Precomiled code here
 U1816ESwitchtoolcompiled.zip
 
 Put ALL the precompiled code all into 1 folder
-![image](https://user-images.githubusercontent.com/11721205/193296500-665f6ea2-0950-4ed1-baab-43d60d01cf3d.png)
+
+<img width="469" alt="Snag_b379389" src="https://user-images.githubusercontent.com/11721205/193356417-722c3e2e-fc85-4cd7-b0aa-22a69e09556f.png">
 
 
 
