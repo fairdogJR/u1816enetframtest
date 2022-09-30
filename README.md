@@ -39,3 +39,8 @@ I ran this below:
 python U1816EExample.py
 
 <img width="599" alt="Snag_9ee6526" src="https://user-images.githubusercontent.com/11721205/193300480-8a9b46f2-90c8-467c-8665-6408baa58a31.png">
+
+
+if you want to build this yourself , I used Visual Studio 2019 Pro
+and use the profile settings as I did. If your more experienced I am sure you can compile even more efficiently than I did.
+<img width="1123" alt="Snag_b411f42" src="https://user-images.githubusercontent.com/11721205/193357685-636c7cdd-0049-4544-94c9-9cb51800be15.png">
