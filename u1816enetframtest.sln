@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "u1816enetframtest", "u1816enetframtest.csproj", "{EF222880-F019-4356-8AC5-719E979D5078}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testswitchdll", "..\testswitchdll\testswitchdll.csproj", "{B493BB4D-7194-4151-AC7F-C22B90E54846}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "U1816ESwitchtool", "..\testswitchdll\U1816ESwitchtool.csproj", "{B493BB4D-7194-4151-AC7F-C22B90E54846}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
