@@ -1,7 +1,7 @@
 # u1816enetframtest
 This Project is to add Python Capability to program U1816E DC to 50GHz  USB DUAL SP6T Coaxial Switches. They are used in Digital test and RF applications to automate signal path switching. this gives repeatability and test speed without a user to have to connect and disconnect a cable everytime. Above 5GHz moving a cable can change the signal path and very much affect repeatability of test results.  
 
-Most users just nees : <b>u1816eswitchtooselfcontained2.zip</b> Unzip it and run it , everything is self contained. Tested on Windows 10 multiple machines and 2 clean OS installs. The other source files are there if you want to dig in or look at how things work. 
+Most users just need: <b>u1816eswitchtooselfcontained2.zip</b> Unzip it and run it , everything is self contained. Tested on Windows 10 multiple machines and 2 clean OS installs. The other source files are there if you want to dig in or look at how things work. 
 
 
 <H3>Design explanation Console app called by Python rather than direct DLL</H3>  (why did I did it this way)<p>
